@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "User",
-    "dateExported": "2024-03-02T07:13:17.875Z",
+    "dateExported": "2024-03-02T19:23:00.354Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-03-02T05:09:35.276Z",
-            "modified": "2024-03-02T05:50:36.729Z",
+            "modified": "2024-03-02T19:21:28.215Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Lucciano\",\n  \"password\":\"123456\",\n  \"correo\":\"Lucciano@email.com\"\n}",
+                "raw": "{\n  \"nombre\":\"Estuardo\",\n  \"password\":\"123456\",\n  \"correo\":\"Estuardo@email.com\"\n}",
                 "form": []
             },
             "tests": []
@@ -47,12 +47,12 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2024-03-02T05:39:02.691Z",
-            "modified": "2024-03-02T07:04:34.189Z",
+            "modified": "2024-03-02T19:22:07.792Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\":\"Mario@email.com\",\n  \"password\":\"123456\"\n}",
+                "raw": "{\n  \"correo\":\"Diego@email.com\",\n  \"password\":\"123456\"\n}",
                 "form": []
             },
             "tests": []
@@ -62,21 +62,21 @@
             "colId": "366e9b53-b89f-41d4-a85a-e6207fd8138c",
             "containerId": "",
             "name": "userPut",
-            "url": "http://localhost:5000/GestorOpiniones/v1/user/65e2bb5af7c2fefc8021c5f5",
+            "url": "http://localhost:5000/GestorOpiniones/v1/user/65e360e457cd9b46c85987e0",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2024-03-02T05:51:13.800Z",
-            "modified": "2024-03-02T07:12:09.252Z",
+            "modified": "2024-03-02T17:29:21.861Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYmI1YWY3YzJmZWZjODAyMWM1ZjUiLCJpYXQiOjE3MDkzNjMwNzQsImV4cCI6MTcwOTM2NjY3NH0.IaL4gYsZs4mJzf1Nn6ivL80H4sgPu4u0cFk5x-7j_0M"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNjBlNDU3Y2Q5YjQ2Yzg1OTg3ZTAiLCJpYXQiOjE3MDk0MDAzNDAsImV4cCI6MTcwOTQwMzk0MH0.oPmz18P5hbahIeCj_UQFKjVzYDnU3qROrO0YlOh9rYc"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\r\n  \"nombre\": \"wad\",\r\n  \"contraseñaAnterior\": \"nuevaContraseña4\",\r\n  \"nuevaContraseña\": \"2312312312\"\r\n}\r\n",
+                "raw": "{\n  \"nombre\": \"Abigail\",\n  \"contraseñaAnterior\": \"123456\",\n  \"nuevaContraseña\": \"20052223123131237\"\n}\n",
                 "form": []
             },
             "tests": []

@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publicaciones",
+    "dateExported": "2024-03-02T19:23:12.536Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c27ecb29-0804-4f4c-8d09-f1915c603877",
+            "colId": "d9488804-0642-4633-8c97-f4340c720d50",
+            "containerId": "",
+            "name": "publicacionesPost",
+            "url": "http://localhost:5000/GestorOpiniones/v1/publicaciones",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T17:31:41.531Z",
+            "modified": "2024-03-02T18:29:01.574Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNmZkZTcxNTZmMDM3MjA2ZGJkOTIiLCJpYXQiOjE3MDk0MDQxMzMsImV4cCI6MTcwOTQwNzczM30.70IrOsER6Aba4cDB1Jtylnwv9Ih1Pm6xnFO87va7c34"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"La vida\",\n  \"categoria\": \"poesia\",\n  \"texto\": \"zôê: vida, Jesus es la vida\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ce1d0ad-fff1-49f7-8fba-e498a8bf97d6",
+            "colId": "d9488804-0642-4633-8c97-f4340c720d50",
+            "containerId": "",
+            "name": "publicacionesGet",
+            "url": "http://localhost:5000/GestorOpiniones/v1/publicaciones",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-02T18:19:14.949Z",
+            "modified": "2024-03-02T18:19:20.283Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3eef78cf-eee7-4a89-896c-5987972d3468",
+            "colId": "d9488804-0642-4633-8c97-f4340c720d50",
+            "containerId": "",
+            "name": "publicacionesPut",
+            "url": "http://localhost:5000/GestorOpiniones/v1/publicaciones/65e3754a052f3b9aed38ecc4",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-02T19:02:30.582Z",
+            "modified": "2024-03-02T19:21:46.004Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzN2MzOTczZjZiY2UwYjFmNzdmMTkiLCJpYXQiOjE3MDk0MDcyOTYsImV4cCI6MTcwOTQxMDg5Nn0.AInUxB6L8wVrTEtPeLrptY1Kjg8WM8S8yxKIMEnBJpI\""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"La zôê\",\n  \"categoria\": \"poesia\",\n  \"texto\": \"zôê: vida, Jesus es la vida\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "67bbdd6d-c812-4f91-b35b-64bd5de01123",
+            "colId": "d9488804-0642-4633-8c97-f4340c720d50",
+            "containerId": "",
+            "name": "publicacionesDelete",
+            "url": "http://localhost:5000/GestorOpiniones/v1/publicaciones/65e379fe899cdffacc0b3884",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-02T19:08:00.058Z",
+            "modified": "2024-03-02T19:22:25.852Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzNmZkZTcxNTZmMDM3MjA2ZGJkOTIiLCJpYXQiOjE3MDk0MDczMjgsImV4cCI6MTcwOTQxMDkyOH0.OwAP1LFJwm8Jx_ZY1rFybMIyaaImth1xm0HLY_8n8XU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -7,7 +7,7 @@ import morgan from "morgan";
 import { dbConnection } from "./mongo.js";
 import userRoutes from '../src/user/user.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
-
+import publicacionesRoutes from "../src/publicaciones/publicaciones.routes.js";
 
 class Server {
   constructor() {
@@ -15,6 +15,7 @@ class Server {
     this.port = process.env.PORT;
     this.userPath = '/GestorOpiniones/v1/user'
     this.authPath = '/GestorOpiniones/v1/auth'
+    this.publicacionesPath = '/GestorOpiniones/v1/publicaciones'
 
     this.middlewares();
     this.conectarDB();
@@ -36,6 +37,7 @@ class Server {
   routes(){
     this.app.use(this.userPath, userRoutes);
     this.app.use(this.authPath, authRoutes);
+    this.app.use(this.publicacionesPath, publicacionesRoutes);
 }
 
   listen() {
