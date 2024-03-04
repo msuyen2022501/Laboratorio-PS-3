@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "65e56093c2012f27a72ff626"
+  },
+  "contenido": "Este es un comentario genial",
+  "estado": true,
+  "google": true,
+  "__v": 0
+}]

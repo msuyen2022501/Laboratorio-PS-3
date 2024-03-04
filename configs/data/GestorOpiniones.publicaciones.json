@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "65e554ac97877a15a2f147b3"
+  },
+  "titulo": "La muerte",
+  "categoria": "poesia",
+  "texto": "Muerte, muertos en pecado",
+  "usuario": {
+    "$oid": "65e532e4eaad03fccc365501"
+  },
+  "estado": true,
+  "google": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e55d4395d01635ea63f284"
+  },
+  "titulo": "La muerte",
+  "categoria": "poesia",
+  "texto": "Muerte, muertos en pecado",
+  "usuario": {
+    "$oid": "65e532e4eaad03fccc365501"
+  },
+  "estado": true,
+  "google": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5616a27db1f4e1ce1fb3e"
+  },
+  "titulo": "La awdawd",
+  "categoria": "awdawd",
+  "texto": "adadadaw",
+  "usuario": {
+    "$oid": "65e532e4eaad03fccc365501"
+  },
+  "estado": true,
+  "google": true,
+  "__v": 0
+}]
