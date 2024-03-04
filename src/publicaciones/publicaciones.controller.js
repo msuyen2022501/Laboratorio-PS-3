@@ -42,11 +42,9 @@ export const publicacionesGet = async (req = request, res = response) => {
 export const publicacionesPost = async (req = request, res = response) => {
   const { titulo, categoria, texto } = req.body;
 
-  // Obtenemos el usuario del objeto de solicitud
   const usuario = req.user;
 
   try {
-    // Creamos una nueva publicación asociada al usuario actual
     const publicacion = new Publicaciones({
       titulo,
       categoria,
@@ -54,13 +52,11 @@ export const publicacionesPost = async (req = request, res = response) => {
       usuario: usuario._id,
     });
 
-    // Guardamos la publicación en la base de datos
     await publicacion.save();
 
-    // Devolvemos la publicación creada junto con su _id
     res.status(200).json({
       publicacion: {
-        _id_publicacion: publicacion._id, // Aquí incluimos el _id de la publicación
+        _id_publicacion: publicacion._id, 
         titulo: publicacion.titulo,
         categoria: publicacion.categoria,
         texto: publicacion.texto,
@@ -83,22 +79,25 @@ export const publicacionPut = async (req, res) => {
   const { titulo, categoria, texto } = req.body;
 
   try {
-    const publicacion = await Publicaciones.findByIdAndUpdate(
-      id,
-      { titulo, categoria, texto },
-      { new: true }
-    );
+    const publicacion = await Publicaciones.findById(id);
 
     if (!publicacion) {
       return res.status(404).json({ error: "Publicación no encontrada" });
     }
 
-    res.status(200).json({ publicacion });
+    const updatedPublicacion = await Publicaciones.findByIdAndUpdate(
+      id,
+      { titulo, categoria, texto },
+      { new: true }
+    );
+
+    res.status(200).json({ publicacion: updatedPublicacion });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Error al actualizar la publicación" });
   }
 };
+
 
 export const publicacionDelete = async (req, res) => {
   const { id } = req.params;

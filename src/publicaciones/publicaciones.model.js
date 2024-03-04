@@ -15,7 +15,7 @@ const publicacionesSchema = mongoose.Schema({
   },
   usuario: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User' // Nombre del modelo de usuario
+    ref: 'User' 
   },
   estado: {
     type: Boolean,
